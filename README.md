@@ -2,6 +2,9 @@
 #### <i>Written by Vincent Buchner and Soren Basnet</i>
 Welcome to our collection of basic data structures implemented in the GO programming language. This repository provides clear and concise implementations of essential data structures, including stacks, queues, deques, linked lists, doubly linked lists, trees, recursions, and graphs. Each data structure is designed to be easily accessible and understandable for developers looking to utilize fundamental data structures in their Go applications.
 
+### Dynamic Arrays
+A dynamic array is a data structure that allows for efficient addition and removal of elements from an ordered collection. It grows or shrinks as needed. Although not as fast as a fixed sized array, it offers a lot more flexibility.
+
 ### Stacks
 Our stack implementation follows the Last In, First Out (LIFO) principle, allowing for efficient operations such as push (adding an element to the top) and pop (removing the top element).
 
