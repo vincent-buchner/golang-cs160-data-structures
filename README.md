@@ -1,5 +1,5 @@
 # CS160 Data Structures in GO | Introduction to Data Structures and Algorithms
-#### <i>Written by Vincent Buchner and Soren Basnet</i>
+#### <i>Written by Vincent Buchner and Soren Reeyaz Basnet</i>
 Welcome to our collection of basic data structures implemented in the GO programming language. This repository provides clear and concise implementations of essential data structures, including stacks, queues, deques, linked lists, doubly linked lists, trees, recursions, and graphs. Each data structure is designed to be easily accessible and understandable for developers looking to utilize fundamental data structures in their Go applications.
 
 ### Stacks
