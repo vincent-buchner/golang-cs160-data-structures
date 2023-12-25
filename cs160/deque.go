@@ -1,3 +1,21 @@
+/* 
+
+Author: Vincent Buchner
+Date: Dec 25th, 2023
+
+A deque, short for double-ended queue, is a versatile 
+data structure that allows elements to be efficiently 
+inserted and removed from both ends. It can be implemented 
+using a doubly linked list, an array, or other data structures. 
+The deque supports operations such as adding elements to 
+the front and back (push operations) as well as removing 
+elements from the front and back (pop operations). This 
+flexibility makes it suitable for a wide range of applications 
+where efficient access and manipulation of elements at both 
+ends of the data structure are required.
+
+*/
+
 package cs160
 
 /*
