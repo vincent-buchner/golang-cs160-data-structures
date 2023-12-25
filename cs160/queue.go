@@ -1,48 +1,55 @@
 
-package main
+package main 
 
 import(
-  "container/list"
+  //"container/list"
   "fmt"
-    )
+)
+
+
 
 func main(){
-  // this creates a new list 
-  // := acts as both declaration of 
-  // a variable and assignment 
-  l := list.New()
+  queue := Queue{} 
 
-  e4 := l.PushBack(4) 
-  e1 := l.PushFront(1)
+  queue.add(1)
+  queue.add(2)
 
-  l.InsertBefore(3, e4) 
-  l.InsertAfter(2, e1)
-  add(l, 7)
-  // iterate throught the list ans print 
-  // its contents 
-  for e:=l.Front(); e !=nil; e=e.Next(){
-    fmt.Println(e.Value)
+
+  for _, value := range queue.items {
+    fmt.Println(value)
   }
 }
 
-// Methods
-//Go does not have classes. However, you can define methods on types.
 
-//A method is a function with a special receiver argument.
+type Queue struct {
+  items []int
+}
 
-//The receiver appears in its own argument list between the func keyword and the method name.
-
-//In this example, the Abs method has a receiver of type Vertex named v.
-
-
-//func (v Vertex) Abs() float64 {
-
-func add(list *list.List, element int){
-
-  list.PushBack(element)
+func (queue *Queue) add(element int){
+  queue.items = append(queue.items, element)
   return 
 }
 
-func remove(list *list.List, element int){
-  // left off here 
+func (queue *Queue) remove(element int){
+  //first_item := queue.items[0]
+  queue.items = queue.items[1:]
 }
+
+func (queue *Queue) peek() (front_element int){
+  front_element = queue.items[0] 
+  return front_element 
+}
+
+func (queue *Queue) isEmpty() (result bool){
+  if len(queue.items) == 0{
+    result = true 
+    return result 
+  }
+  result = false 
+  return result
+}
+
+
+
+
+
