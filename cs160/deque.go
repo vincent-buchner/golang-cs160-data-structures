@@ -40,8 +40,8 @@ func (deque *Deque[T]) PopFront() *T {
 		return &zero
 	}
 
-	poppedItem := deque.arrayDeque[deque.Size() -1]
-	deque.arrayDeque = deque.arrayDeque[:deque.Size()-1]
+	poppedItem := deque.arrayDeque[0]
+	deque.arrayDeque = deque.arrayDeque[1:]
 
 	return &poppedItem
 }
@@ -62,8 +62,8 @@ func (deque *Deque[T]) PopBack() *T {
 		return &zero
 	}
 
-	poppedItem := deque.arrayDeque[0]
-	deque.arrayDeque = deque.arrayDeque[0:]
+	poppedItem := deque.arrayDeque[deque.Size() - 1]
+	deque.arrayDeque = deque.arrayDeque[:deque.Size() - 1]
 
 	return &poppedItem
 }
